@@ -195,3 +195,100 @@ body {
 }
 
 .ahorro-faltan-monto { font-size: 1.8rem; font-weight: 800; color: var(--verde-claro); }
+
+.tarjeta-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tarjeta-cabecera .titulo-tarjeta { margin-bottom: 0; }
+.enlace-verde { color: var(--verde-claro); font-size: 0.85rem; font-weight: 600; text-decoration: none; }
+
+.lista-habitos { list-style: none; display: flex; flex-direction: column; }
+
+.habito {
+  display: grid;
+  grid-template-columns: 36px 1fr auto 28px;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--borde);
+}
+
+.habito:last-child { border-bottom: none; }
+.habito-icono { font-size: 1.4rem; color: var(--verde-claro); text-align: center; }
+.habito-info { display: flex; flex-direction: column; }
+.habito-info span { color: var(--texto-suave); font-size: 0.8rem; }
+.racha { color: var(--racha); font-weight: 600; font-size: 0.85rem; }
+
+.check {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--texto-suave);
+  border-radius: 6px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: 0.2s;
+}
+
+.check:checked { background: var(--verde); border-color: var(--verde); }
+.check:checked::after { content: "\2713"; color: #04110a; font-weight: 800; font-size: 0.9rem; }
+
+.mes-nav { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--texto-suave); }
+.mes-nav button { background: none; border: none; color: var(--texto-suave); font-size: 1.2rem; cursor: pointer; }
+
+.dias-semana,
+.dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.dias-semana { color: var(--texto-suave); font-size: 0.8rem; margin: 14px 0 10px; }
+
+.dia {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--fondo-2);
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
+.dia.completado { background: var(--verde-oscuro); color: var(--texto); }
+.dia.hoy { background: var(--verde); color: #04110a; font-weight: 700; }
+
+.circulo {
+  --porcentaje: 0;
+  width: 130px;
+  height: 130px;
+  margin: 8px auto;
+  border-radius: 50%;
+  background: conic-gradient(var(--verde) calc(var(--porcentaje) * 1%), var(--borde) 0);
+  display: grid;
+  place-items: center;
+}
+
+.circulo-interior {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--tarjeta);
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+}
+
+.estadisticas-texto { text-align: center; color: var(--texto-suave); font-size: 0.85rem; margin-bottom: 14px; }
+.mini-datos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; text-align: center; }
+.mini-datos div { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.mini-datos i { color: var(--racha); }
+.mini-datos strong { font-size: 1.1rem; }
+.mini-datos span { font-size: 0.65rem; color: var(--texto-suave); }
