@@ -141,3 +141,57 @@ body {
   place-items: center;
   font-weight: 700;
 }
+
+.bienvenida {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(120deg, var(--tarjeta) 30%, rgba(34, 197, 94, 0.22));
+}
+
+.bienvenida-logo {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid var(--verde-oscuro);
+  background: rgba(34, 197, 94, 0.08);
+  display: grid;
+  place-items: center;
+  font-size: 2.6rem;
+  color: var(--verde);
+}
+
+.bienvenida h2 { font-size: 2rem; }
+.subtitulo { color: var(--texto-suave); font-size: 1.1rem; margin: 4px 0 12px; }
+.fecha { color: var(--verde-claro); font-weight: 600; }
+
+.titulo-tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.titulo-tarjeta i { color: var(--verde); }
+
+.ahorro { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+.ahorro-monto { font-size: 2.2rem; font-weight: 800; }
+.ahorro-meta { color: var(--texto-suave); margin-bottom: 12px; }
+
+.barra { height: 10px; background: var(--borde); border-radius: 999px; overflow: hidden; }
+.barra-relleno { height: 100%; background: var(--verde); border-radius: 999px; }
+
+.ahorro-pie { margin-top: 10px; font-size: 0.85rem; color: var(--texto-suave); }
+.ahorro-pie span { color: var(--verde-claro); font-weight: 700; }
+
+.ahorro-faltan {
+  border-left: 1px solid var(--borde);
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ahorro-faltan-monto { font-size: 1.8rem; font-weight: 800; color: var(--verde-claro); }
