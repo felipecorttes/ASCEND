@@ -163,9 +163,64 @@
   </div>
 </article>
   </article>
-  <article class="tarjeta finanzas"></article>
-  <article class="tarjeta objetivos"></article>
-  <article class="tarjeta notas"></article>
+  <article class="tarjeta finanzas">
+    <article class="tarjeta finanzas">
+  <div class="tarjeta-cabecera">
+    <h3 class="titulo-tarjeta"><i class="fa-solid fa-dollar-sign"></i> Tus Finanzas</h3>
+    <a href="#" class="enlace-verde">Ver detalles →</a>
+  </div>
+
+  <div class="finanzas-cuerpo">
+    <svg class="grafico" viewBox="0 0 200 100" preserveAspectRatio="none">
+      <polyline points="0,85 70,60 140,45 200,15" fill="none" stroke="#22c55e" stroke-width="3" vector-effect="non-scaling-stroke" />
+    </svg>
+
+    <div class="finanzas-datos">
+      <div><span>Ingresos del mes</span><strong>$1.200.000</strong></div>
+      <div><span>Gastos del mes</span><strong>$950.000</strong></div>
+      <div><span>Ahorro del mes</span><strong>$250.000</strong></div>
+    </div>
+  </div>
+</article>
+  </article>
+  <article class="tarjeta objetivos">
+    <article class="tarjeta objetivos">
+  <h3 class="titulo-tarjeta"><i class="fa-solid fa-bullseye"></i> Tus Objetivos</h3>
+
+  <div class="objetivo">
+    <div class="circulo circulo-mini" style="--porcentaje: 25">
+      <div class="circulo-interior"><strong>25%</strong></div>
+    </div>
+    <div class="objetivo-info">
+      <strong>Ahorrar $8.000.000</strong>
+      <span>Meta: 31 Dic 2026</span>
+      <div class="barra"><div class="barra-relleno" style="width: 25%"></div></div>
+    </div>
+  </div>
+
+  <div class="objetivo">
+    <div class="circulo circulo-mini" style="--porcentaje: 0">
+      <div class="circulo-interior"><strong>0%</strong></div>
+    </div>
+    <div class="objetivo-info">
+      <strong>Aprender Ciberseguridad</strong>
+      <span>Meta: 6 meses</span>
+      <div class="barra"><div class="barra-relleno" style="width: 0%"></div></div>
+    </div>
+  </div>
+</article>
+  </article>
+  <article class="tarjeta notas">
+    <article class="tarjeta notas">
+  <div class="tarjeta-cabecera">
+    <h3 class="titulo-tarjeta"><i class="fa-regular fa-note-sticky"></i> Notas del Día</h3>
+  </div>
+  <textarea id="nota" placeholder="¿Qué aprendiste hoy? ¿Qué puedes mejorar?"></textarea>
+  <button class="boton-verde" id="guardar-nota">
+    <i class="fa-regular fa-floppy-disk"></i> Guardar Nota
+  </button>
+</article>
+  </article>
 </section>
     
   </main>

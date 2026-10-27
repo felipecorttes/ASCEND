@@ -292,3 +292,60 @@ body {
 .mini-datos i { color: var(--racha); }
 .mini-datos strong { font-size: 1.1rem; }
 .mini-datos span { font-size: 0.65rem; color: var(--texto-suave); }
+
+.finanzas-cuerpo { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; align-items: center; }
+
+.grafico {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.15), transparent);
+}
+
+.finanzas-datos { display: flex; flex-direction: column; gap: 14px; }
+.finanzas-datos span { display: block; color: var(--texto-suave); font-size: 0.8rem; }
+.finanzas-datos strong { font-size: 1.3rem; }
+
+.objetivo { display: flex; align-items: center; gap: 16px; padding: 12px 0; }
+.objetivo + .objetivo { border-top: 1px solid var(--borde); }
+
+.circulo-mini { width: 64px; height: 64px; margin: 0; flex-shrink: 0; }
+.circulo-mini .circulo-interior { width: 50px; height: 50px; font-size: 0.75rem; }
+
+.objetivo-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.objetivo-info span { color: var(--texto-suave); font-size: 0.8rem; }
+
+.notas textarea {
+  width: 100%;
+  height: 110px;
+  resize: none;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--borde);
+  background: var(--fondo-2);
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.notas textarea:focus { outline: none; border-color: var(--verde); }
+
+.boton-verde {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: var(--verde);
+  color: #04110a;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.boton-verde:hover { background: var(--verde-claro); }
